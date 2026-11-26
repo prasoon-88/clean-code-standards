@@ -1,0 +1,13 @@
+{
+  "name": "clean-code-standards",
+  "version": "1.0.0",
+  "description": "Enforces design patterns, reusable code, defensive coding, UPPER_SNAKE_CASE scoped const objects, minimal exports, class abstraction, switch-case and no workarounds.",
+  "author": {
+    "name": "prasoon-88",
+    "url": "https://github.com/prasoon-88"
+  },
+  "homepage": "https://github.com/prasoon-88/clean-code-standards",
+  "repository": "https://github.com/prasoon-88/clean-code-standards",
+  "license": "MIT",
+  "keywords": ["clean-code", "best-practices", "design-patterns", "code-review", "defensive-coding", "skill"]
+}

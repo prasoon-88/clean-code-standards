@@ -1,0 +1,21 @@
+{
+  "name": "clean-code-standards",
+  "owner": {
+    "name": "prasoon-88",
+    "url": "https://github.com/prasoon-88"
+  },
+  "metadata": {
+    "description": "Clean code standards skill for Claude",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "clean-code-standards",
+      "source": "./",
+      "description": "Enforces design patterns, reusable code, defensive coding, UPPER_SNAKE_CASE scoped const objects, minimal exports, class abstraction, switch-case and no workarounds.",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": ["clean-code", "best-practices", "design-patterns", "code-review"]
+    }
+  ]
+}
