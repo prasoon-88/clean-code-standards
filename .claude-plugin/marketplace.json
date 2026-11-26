@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "clean-code-standards",
-      "source": "./",
+      "source": "./plugins/clean-code-standards",
       "description": "Enforces design patterns, reusable code, defensive coding, UPPER_SNAKE_CASE scoped const objects, minimal exports, class abstraction, switch-case and no workarounds.",
       "version": "1.0.0",
       "license": "MIT",

@@ -17,7 +17,7 @@ A skill that makes Claude write, refactor and review code using consistent, stri
 
 **Also covers:** SOLID / KISS / YAGNI, naming, function size, immutability & types, error handling, async, logging, formatting & linting, dependencies, file structure, comments, security & config, testability, performance, frontend accessibility, framework conventions (React, Node, Python, Java/Kotlin), API design, database and git hygiene — plus a 21-item checklist Claude runs before finishing.
 
-See the full rules in [`skills/clean-code-standards/SKILL.md`](skills/clean-code-standards/SKILL.md).
+See the full rules in [`plugins/clean-code-standards/skills/clean-code-standards/SKILL.md`](plugins/clean-code-standards/skills/clean-code-standards/SKILL.md).
 
 ## Install
 
@@ -41,9 +41,9 @@ Copy the skill folder into your skills directory:
 
 ```bash
 git clone https://github.com/prasoon-88/clean-code-standards.git
-cp -r clean-code-standards/skills/clean-code-standards ~/.claude/skills/        # all projects
+cp -r clean-code-standards/plugins/clean-code-standards/skills/clean-code-standards ~/.claude/skills/        # all projects
 # or
-cp -r clean-code-standards/skills/clean-code-standards .claude/skills/          # current project only
+cp -r clean-code-standards/plugins/clean-code-standards/skills/clean-code-standards .claude/skills/          # current project only
 ```
 
 ### Claude app (claude.ai / Desktop)
