@@ -6,16 +6,21 @@
   },
   "metadata": {
     "description": "Clean code standards skill for Claude",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "clean-code-standards",
       "source": "./plugins/clean-code-standards",
       "description": "Enforces design patterns, reusable code, defensive coding, UPPER_SNAKE_CASE scoped const objects, minimal exports, class abstraction, switch-case and no workarounds.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "license": "MIT",
-      "keywords": ["clean-code", "best-practices", "design-patterns", "code-review"]
+      "keywords": [
+        "clean-code",
+        "best-practices",
+        "design-patterns",
+        "code-review"
+      ]
     }
   ]
 }

@@ -4,18 +4,21 @@ A skill that makes Claude write, refactor and review code using consistent, stri
 
 ## What it enforces
 
-**Core rules**
-1. Proven design patterns (Strategy, Factory, Builder, Adapter, Facade, Observer, Repository, DI)
-2. Reusable, DRY code
-3. Constants in `UPPER_SNAKE_CASE`, hard-coded values grouped in immutable const objects, each placed at the right scope (module / feature / global)
-4. Export a function or constant only if another file imports it
-5. Abstract related data + behaviour into classes (composition over inheritance)
-6. No workarounds — fix the root cause
-7. `switch` / `match` for 3+ discrete cases, with an exhaustive `default`
-8. Defensive coding — validate inputs, handle null/empty/boundaries, timeouts, safe defaults
-9. Small, focused changes
+**Core rules (always loaded)**
+1. Design patterns as a recognition aid — use one only when the problem already has its shape
+2. Reuse without speculation — extract duplicated knowledge on the 2nd use, duplicated logic on the 3rd
+3. Constants in `UPPER_SNAKE_CASE` const objects, each placed at the scope of its users (file / feature / global), no silent env fallbacks
+4. Export a function, type or constant only if another file imports it
+5. Classes only where the language idiom fits and data has invariants (hooks and modules in React)
+6. No workarounds — fix the root cause, or stop and tell the user
+7. One decision rule for lookup object vs `switch` vs Strategy
+8. Defend at the boundaries with the project's validator, trust the types inside
+9. Small, focused diffs — rules apply to lines you add or change
+10. Comments match the file's density
 
-**Also covers:** SOLID / KISS / YAGNI, naming, function size, immutability & types, error handling, async, logging, formatting & linting, dependencies, file structure, comments, security & config, testability, performance, frontend accessibility, framework conventions (React, Node, Python, Java/Kotlin), API design, database and git hygiene — plus a 21-item checklist Claude runs before finishing.
+**Loaded only when relevant** (`references/`): general practices — SOLID, naming, functions, async, logging, dependencies, security, testing, performance — and domain rules for frontend/accessibility, React, Node, Python, Java/Kotlin, API design, databases and git.
+
+Project rules (`CLAUDE.md`, `AGENTS.md`, linters) always win, and a checklist — including format, lint, typecheck and tests — runs before Claude finishes.
 
 See the full rules in [`plugins/clean-code-standards/skills/clean-code-standards/SKILL.md`](skills/clean-code-standards/SKILL.md).
 
